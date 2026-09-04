@@ -11,6 +11,10 @@ const ContadorHistorico = () => {
             setContador(contador - 1)
         }
     }
+
+    const zerar = () => {
+        setContador(0)
+    }
     return (
         <div className={`w-screen h-screen bg-zinc-900 text-white flex items-center justify-center flex-col`}>
             <span>
