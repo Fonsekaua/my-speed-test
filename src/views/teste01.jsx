@@ -2,11 +2,14 @@
 import { useState } from "react"
 
 const TrocarTema = () => {
-  
-
+    const [tema,definirTema] = useState(false)
+    
     return (
-        <div>
-            
+        <div className={`w-screen h-screen`} >
+            <button className="bg-mist-500 p-1" onClick={() => definirTema(prev => !prev)}>
+                Tema atual - {tema?"claro":'escuro'}
+            </button>
+
         </div>
     )
 }
