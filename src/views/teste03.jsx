@@ -6,6 +6,11 @@ const ContadorHistorico = () => {
     const incrementar = () => {
         setContador(contador + 1)
     }
+    const decrementar = () => {
+        if(contador>=0){
+            setContador(contador - 1)
+        }
+    }
     return (
         <div className={`w-screen h-screen bg-zinc-900 text-white flex items-center justify-center flex-col`}>
             <span>
