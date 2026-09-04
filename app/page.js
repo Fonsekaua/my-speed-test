@@ -25,6 +25,9 @@ export default function Home() {
       <Link href={'/teste05'}>
         teste05
       </Link>
+        <Link href={'/teste06'}>
+        teste06
+      </Link>
     </div>
   );
 }
